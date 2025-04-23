@@ -21,25 +21,24 @@ export class SamplePoMenuHumanResourcesComponent {
   menuItemSelected!: string;
 
   menus: Array<PoMenuItem> = [
-    { label: 'Register user', action: this.printMenuAction.bind(this), icon: 'an an-user', shortLabel: 'Register' },
+    { label: 'Cadastro de Usuário', action: this.printMenuAction.bind(this), icon: 'an an-user', shortLabel: 'Register' },
     {
       label: 'Timekeeping',
       action: this.printMenuAction.bind(this),
       icon: 'an an-clock',
-      shortLabel: 'Timekeeping',
-      badge: { value: 1 }
+      shortLabel: 'Timekeeping'
     },
     {
-      label: 'Useful links',
+      label: 'Links Úteis',
       icon: 'an an-share',
       shortLabel: 'Links',
       subItems: [
-        { label: 'Ministry of Labour', action: this.printMenuAction.bind(this), link: 'http://trabalho.gov.br/' },
+        { label: 'Ministério do Trabalho', action: this.printMenuAction.bind(this), link: 'http://trabalho.gov.br/' },
         { label: 'SindPD Syndicate', action: this.printMenuAction.bind(this), link: 'http://www.sindpd.com.br/' }
       ]
     },
     {
-      label: 'Benefits',
+      label: 'Benefícios',
       icon: 'an an-star',
       shortLabel: 'Benefits',
       subItems: [
