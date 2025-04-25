@@ -24,10 +24,10 @@ export class AppComponent {
       icon: 'po-icon po-icon-pushcart',
       link: '/produtos'
     },
-    { label: 'Estoque', 
-      shortLabel: 'Estoque',
-      icon: 'po-icon po-icon-sale',
-      action: this.onClick.bind(this) 
+    { label: 'Cadastro', 
+      shortLabel: 'Cadastro',
+      icon: 'po-icon po-icon-user',
+      link: '/cadastro'
     },
     { label: 'Financeiro', 
       shortLabel: 'Financeiro',

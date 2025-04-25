@@ -1,1 +1,9 @@
-<p>produtos works!</p>
+<po-widget class="po-md-4">
+    <po-gauge p-title="Limite de transferência" [p-value]="poGaugeAll"></po-gauge>
+
+    <po-gauge
+      p-title="Limite Diário"
+      [p-value]="poGaugeDay"
+      [p-ranges]="turnoverRanges">
+    </po-gauge>
+</po-widget>
