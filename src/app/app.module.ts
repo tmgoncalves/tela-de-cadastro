@@ -4,23 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PoMenuComponent, PoMenuModule, PoModule } from '@po-ui/ng-components';
+import { PoModule } from '@po-ui/ng-components';
 import { RouterModule } from '@angular/router';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
-import { SamplePoMenuHumanResourcesComponent } from './_components/sample-po-menu-human-resources/sample-po-menu-human-resources.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProdutosComponent } from './pages/produtos/produtos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SamplePoMenuHumanResourcesComponent
+    HomeComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PoModule,
     RouterModule.forRoot([]),
-    PoTemplatesModule,
-    PoMenuModule
+    PoTemplatesModule
   ],
   providers: [
     provideHttpClient(withInterceptorsFromDi()),
